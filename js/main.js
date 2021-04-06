@@ -88,7 +88,13 @@ function onSubmit(g){
 
         console.log('Success');
 
-        waterAmount.textContent = `${Math.round(vesselInput.value * 0.7831)}ml`;
+        waterAmount.textContent = `${Math.floor(vesselInput.value * 0.7831)}ml`;
+        sugarAmount.textContent = `${Math.floor(vesselInput.value * 0.0548)}g`;
+        teaAmount.textContent = `${Math.floor(vesselInput.value * 0.0055)}g`;
+        starterAmount.textContent = `${Math.floor(vesselInput.value * 0.1566)}ml`;
+
+
+
 
         /*
         const newUser = document.createElement('li'); //creating a new list item when we submit
