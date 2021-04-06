@@ -22,7 +22,7 @@
                 <!--
                 <h1>Add User</h1>
 
-                <div class="msg"></div>
+                
 
                 <div>
                     <label for="name">Name:</label>
@@ -35,6 +35,8 @@
                 </div>
                 -->
 
+                <div class="msg"></div>
+
                 <div>
                     <table>
                         <tr>
@@ -42,33 +44,33 @@
                           <th>Amounts</th>
                         </tr>
                         <tr>
-                          <th>Water (ml)</th>
-                          <td>HERE</td>
+                          <th>Water:</th>
+                          <td id="waterAmount"></td>
                         </tr>
                         <tr>
-                          <th>Sugar (g)</th>
-                          <td>WHEEL</td>
+                          <th>Sugar:</th>
+                          <td id="sugarAmount"></td>
                         </tr>
                         <tr>
-                          <th>Black or Oolong tea (g)</th>
-                          <td>&nbsp;</td>
+                          <th>Black or Oolong tea:</th>
+                          <td id="teaAmount"></td>
                         </tr>
                         <tr>
-                          <th>Starter liquid (ml)</th>
-                          <td>&nbsp;</td>
+                          <th>Starter liquid:</th>
+                          <td id="starterAmount"></td>
                         </tr>
                         <tr>
-                            <th><i>Insert total vessel amount in (ml) &rarr;</i></th>
+                            <th><span id="amountlabel">Insert total vessel amount in (ml) &rarr;</span></th>
                             <td>   
                                 <div id="inputcontainer">
-                                    <input type="number" id="vesselamount" size="6" value="2200">
+                                    <input type="number" id="vesselAmount" size="6" value="2200">
                                 </div>
                             </td>
                         </tr>
                     </table>
                 </div>
 
-                <input type="submit" name="submit" value="Submit this" class="submit-btn">
+                <input type="submit" name="submit" value="Calculate amounts" class="submit-btn">
 
             </form>
 

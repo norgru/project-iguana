@@ -42,6 +42,9 @@ header{
     display: block;
 }
 
+#amountlabel{
+}
+
 td #inputcontainer{
 }
 
@@ -69,6 +72,7 @@ table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 td, th {

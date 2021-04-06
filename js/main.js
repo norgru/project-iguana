@@ -33,9 +33,9 @@ const ul = document.querySelector('.items');
 
 //ul.remove(); //removes the list from webpage
 //ul.lastElementChild.remove(); //removes last element from the list
-ul.firstElementChild.textContent = 'Hello there son';
-ul.children[1].innerText = 'Norman';
-ul.lastElementChild.innerHTML = '<h1>That&#x27s it</h1>';
+//ul.firstElementChild.textContent = 'Hello there son';
+//ul.children[1].innerText = 'Norman';
+//ul.lastElementChild.innerHTML = '<h1>That&#x27s it</h1>';
 
 //ACTUALLY USING IT
 
@@ -56,18 +56,27 @@ button.addEventListener('click', (e) => { //first thing you add to event listene
 });
 
 const myForm = document.querySelector('#user-form'); //remember # for ids, . for classes
+const msg = document.querySelector('.msg');
+
+/*
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
-const msg = document.querySelector('.msg');
 const userList = document.querySelector('#users');
+*/
+const vesselInput = document.querySelector('#vesselAmount');
+
+const waterAmount = document.querySelector('#waterAmount');
+const sugarAmount = document.querySelector('#sugarAmount');
+const teaAmount = document.querySelector('#teaAmount');
+const starterAmount = document.querySelector('#starterAmount');
 
 myForm.addEventListener('submit', onSubmit);
 
 
 function onSubmit(g){
-    console.log(`First name is: ${nameInput.value}`);
+    console.log(`Vessel size is: ${vesselInput.value}`);
 
-    if(nameInput.value === '' || emailInput.value === ''){
+    if(vesselInput.value === ''){
         console.log('Please enter vessel amount field');
 
         msg.classList.add('error'); //add css 'error' class to msg
@@ -76,12 +85,18 @@ function onSubmit(g){
         setTimeout(() => msg.remove(), 3000);
     }
     else{
+
         console.log('Success');
 
+        waterAmount.textContent = `${Math.round(vesselInput.value * 0.7831)}ml`;
+
+        /*
         const newUser = document.createElement('li'); //creating a new list item when we submit
         newUser.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
 
         userList.appendChild(newUser); //actually applying the new list item to the list, #users is in the html below the form and list.
+        */
+
 
         //clear fields
         //nameInput.value = '';
@@ -89,3 +104,15 @@ function onSubmit(g){
     }
 
 }
+
+
+setInterval(() => {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16); //random hex colour value
+
+    let randomColorHash = `#${randomColor}`
+
+    document.getElementById("amountlabel").style.color = randomColorHash;
+
+    //console.log(randomColor);
+
+}, 200);
