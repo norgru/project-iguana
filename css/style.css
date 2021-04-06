@@ -8,7 +8,7 @@ body{
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    line-height: 2rem;
+    line-height: 1.4rem;
 }
 
 #titlegif{
@@ -27,6 +27,7 @@ header{
 
 .container{
     margin: auto;
+    margin-bottom: 50px;
     width: 80%;
     overflow: auto;
     padding: 1rem;
@@ -34,7 +35,6 @@ header{
 }
 
 #user-form{
-    padding: 2rem;
     background:cornsilk;
 }
 
@@ -42,17 +42,16 @@ header{
     display: block;
 }
 
-input[type='text']{
+td #inputcontainer{
+}
+
+input[type='number']{
     text-align: center;
     padding: 10px;
     border-radius: 0.3rem;
     border: 1px solid #ccc;
+    width: 50px;
 }
-
-#inputcontainer{
-    width: 100%;
-}
-
 
 .submit-btn{
     display: block; /*make it its own block element on its own line*/
@@ -74,11 +73,12 @@ table {
 
 td, th {
     border: 1px solid rgb(190,190,190);
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 td {
     text-align: center;
+    padding: 0;
 }
 
 caption {
@@ -111,7 +111,7 @@ li{
 
 footer{
     font-size: 12px;
-    background: cornsilk;
+    background: #F7A645;
     position: fixed;
     left: 0;
     bottom: 0;
