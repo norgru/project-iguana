@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -36,10 +35,9 @@ header{
     display: block;
 }
 
-#user-form input[type='text']{
+input[type='text']{
     width: 100%;
     padding: 8px;
-    margin-bottom: 1rem;
     border-radius: 0.3rem;
     border: 1px solid #ccc;
 }

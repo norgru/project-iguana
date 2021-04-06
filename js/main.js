@@ -46,10 +46,12 @@ const button = document.querySelector('.submit-btn');
 button.addEventListener('click', (e) => { //first thing you add to event listener is the event, second is the function that you want to run when event happens. Instead of 'click' you can do 'mouseover'
     console.log(e.target.className); //the function is an arrow function and you have to use an event object, in this case it's 'e', which doesn't matter
 
+    /*
     document.querySelector('#user-form').style.background = '#ccc';
     document.querySelector('body').classList.add('bg-dark');
     
     document.querySelector('.items').lastElementChild.innerHTML = '<h1>NORMAN FERNANDO GRUNDY</h1>'
+    */
 
 });
 
@@ -82,8 +84,8 @@ function onSubmit(g){
         userList.appendChild(newUser); //actually applying the new list item to the list, #users is in the html below the form and list.
 
         //clear fields
-        nameInput.value = '';
-        emailInput.value = '';
+        //nameInput.value = '';
+        //emailInput.value = '';
     }
 
 }
