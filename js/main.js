@@ -76,6 +76,8 @@ myForm.addEventListener('submit', onSubmit);
 function onSubmit(g){
     console.log(`Vessel size is: ${vesselInput.value}`);
 
+    g.preventDefault(); // to stop that weird emptying out the fields glitch that happens if we hit submit for the very first time
+
     if(vesselInput.value === ''){
         console.log('Please enter vessel amount field');
 
